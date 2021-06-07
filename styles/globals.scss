@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f9f9ff;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+section {
+  padding-top: 110px;
+  position: relative;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  top: 95%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #000;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #000;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+
+/* Rotate */
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover,
+.hvr-rotate:focus,
+.hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/* Card */
+
+$dark-blue: #26293c;
+$light-green: #b2d9a6;
+$yellow: #ffd433;
+$gray: #c0c3d7;
+$light-blue: #c6e1ed;
+$light-pink: #ffd3d4;
+$orange: #ff582c;
+$light-orange: lighten($orange, 15%);
+$purple: #782c4a;
+$light-purple: lighten($purple, 35%);
+$red: #c0392b;
+$pale-red: rgba($red, 0.6);
