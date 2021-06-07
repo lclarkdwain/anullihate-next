@@ -75,27 +75,31 @@ const Introduction = ({ ...rest }: { className?: string }) => (
       alt='me'
       className={'rounded-full border-black mb-4 object-cover object-center'}
     />
-    <h1 className={'font-bold mb-2'}>Clark Dwain Luna | Web Developer</h1>
+    <h1 className={'font-bold mb-2'}>Clark Dwain Luna | Software Developer</h1>
     <div className={'flex'}>
       <Typewriter
         options={{ autoStart: true, loop: true }}
         onInit={(typewriter) => {
           typewriter
-            .typeString("I'm a <strong>Web Developer</strong>")
+            .typeString("I'm a <strong>Developer</strong>")
             .pauseFor(2500)
-            .deleteChars(13)
+            .deleteChars(9)
             .typeString('<strong>Designer</strong>')
             .pauseFor(1000)
             .deleteAll()
-            .typeString('and a <strong>Cat Lover</strong>')
+            .typeString('and a <strong>Technology Enthusiast</strong>')
             .pauseFor(2500)
             .start()
         }}
       />
     </div>
     <p>
-      Hi Everyone, welcome to my interactive resume, I hope you'll enjoyed it
-      also you can get the source code for free.
+      Hi Everyone, welcome to my interactive resume, I'm a
+      <strong> Software Developer</strong> and I mostly developed
+      <strong> Web </strong>
+      applications but also worked with <strong>Desktop</strong> and
+      <strong> Mobile</strong> platforms, I hope you'll enjoy learning more
+      about me.
     </p>
     <ul className='p-0 list-none mt-2'>
       <li className='inline-block mr-6'>
