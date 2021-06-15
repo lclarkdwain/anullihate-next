@@ -5,10 +5,11 @@ import styled from '@emotion/styled'
 import Particles from 'react-particles-js'
 import Typewriter from 'typewriter-effect'
 import { simple } from '../../lib/particles-params'
+import Section from '../shared/Section'
 
 const SectionHomeContainer = styled.div``
 
-const StyledSectionHome = styled.section`
+const StyledSectionHome = styled(Section)`
   display: flex;
   align-items: center;
   /* background-color: #e3e0cf; */
@@ -113,13 +114,16 @@ const Introduction = ({ ...rest }: { className?: string }) => (
         </a>
       </li>
       <li className='inline-block mr-6'>
-        <a href='https://www.instagram.com/iamluark/' target='_blank'>
-          <i className='fab fa-instagram'></i>
+        <a
+          href='https://stackoverflow.com/users/9620985/anullihate'
+          target='_blank'
+        >
+          <i className='fab fa-stack-overflow'></i>
         </a>
       </li>
       <li className='inline-block mr-6'>
-        <a href='https://www.facebook.com/lclarkdwain' target='_blank'>
-          <i className='fab fa-facebook'></i>
+        <a href='https://www.instagram.com/iamluark/' target='_blank'>
+          <i className='fab fa-instagram'></i>
         </a>
       </li>
       <li className='inline-block'>
@@ -148,7 +152,7 @@ const SectionHome = () => {
   return (
     <SectionHomeContainer>
       <StyledSectionHome id='home'>
-        <Introduction className={'flex flex-col items-center'} />
+        <Introduction className='flex flex-col items-center' />
         <ScrollDown />
         <StyledParticlesContainer>
           <Particles params={simple} />

@@ -1,7 +1,9 @@
+import Section from '../shared/Section'
+
 const SectionWorks = () => {
   return (
     <div>
-      <section id='works'></section>
+      <Section id='works'>SectionWorks</Section>
     </div>
   )
 }

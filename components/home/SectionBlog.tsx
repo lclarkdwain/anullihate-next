@@ -1,9 +1,11 @@
-const SectionBlogs = () => {
+import Section from '../shared/Section'
+
+const SectionBlog = () => {
   return (
     <div>
-      <section id='blog'></section>
+      <Section id='blog'>SectionBlog</Section>
     </div>
   )
 }
 
-export default SectionBlogs
+export default SectionBlog

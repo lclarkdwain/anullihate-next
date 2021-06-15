@@ -1,7 +1,9 @@
+import Section from '../shared/Section'
+
 const SectionContact = () => {
   return (
     <div>
-      <section id='contact'></section>
+      <Section id='contact'>SectionContact</Section>
     </div>
   )
 }
