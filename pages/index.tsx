@@ -16,11 +16,11 @@ export default function Home() {
       </Head>
       <SectionHome />
       <SectionAbout />
-      <SectionServices />
+      {/* <SectionServices />
       <SectionExperiences />
       <SectionWorks />
       <SectionBlog />
-      <SectionContact />
+      <SectionContact /> */}
     </>
   )
 }
