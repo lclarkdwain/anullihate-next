@@ -6,7 +6,6 @@ type Props = {
 }
 
 const StyledMain = styled.main`
-  background-color: #e3e0cf;
   margin-left: 290px;
   transition: all 0.3s;
 `

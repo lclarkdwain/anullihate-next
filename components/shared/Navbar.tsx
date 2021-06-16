@@ -92,10 +92,6 @@ const Navbar = () => {
           <Link href='#about'>About</Link>
         </li>
         <li>
-          <i className='fas fa-briefcase mr-5'></i>
-          <Link href='#services'>Services</Link>
-        </li>
-        <li>
           <i className='fas fa-graduation-cap mr-5'></i>
           <Link href='#experiences'>Experience</Link>
         </li>

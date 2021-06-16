@@ -4,7 +4,6 @@ import SectionBlog from '../components/home/SectionBlog'
 import SectionContact from '../components/home/SectionContact'
 import SectionExperiences from '../components/home/SectionExperiences'
 import SectionHome from '../components/home/SectionHome'
-import SectionServices from '../components/home/SectionServices'
 import SectionWorks from '../components/home/SectionWorks'
 // import styles from '../styles/Home.module.scss'
 
@@ -16,8 +15,7 @@ export default function Home() {
       </Head>
       <SectionHome />
       <SectionAbout />
-      {/* <SectionServices />
-      <SectionExperiences />
+      {/* <SectionExperiences />
       <SectionWorks />
       <SectionBlog />
       <SectionContact /> */}

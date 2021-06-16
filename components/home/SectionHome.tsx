@@ -54,7 +54,6 @@ const Introduction = ({ ...rest }: { className?: string }) => (
         position: relative;
         padding: 10px 20px;
         background: rgba(0, 0, 0, 0.2);
-        border-top-right-radius: 20;
         border-bottom-left-radius: 10px;
         transition: all 1s;
         :hover {
@@ -143,7 +142,44 @@ const Introduction = ({ ...rest }: { className?: string }) => (
   </div>
 )
 
-const ScrollDown = () => <div className='icon-scroll'></div>
+const ScrollDown = styled.div`
+  &,
+  &:before {
+    position: absolute;
+    left: 50%;
+  }
+
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  top: 95%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #000;
+  border-radius: 25px;
+
+  &:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(26px);
+    }
+  }
+`
 
 const SectionHome = () => {
   if (process.browser) {
